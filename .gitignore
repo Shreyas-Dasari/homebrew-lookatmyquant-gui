@@ -1,0 +1,19 @@
+.DS_Store
+*.log
+
+# Dependencies & environments
+node_modules/
+.venv/
+
+# Build outputs
+dist/
+dist-ssr/
+lookatmyquant-tauri/src-tauri/target/
+lookatmyquant-tauri/src-tauri/gen/schemas/
+
+# Local model weights
+models/
+
+# Editors
+.vscode/
+.idea/
