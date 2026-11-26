@@ -8,10 +8,19 @@ cask "lookatmyquant-gui" do
   homepage "https://github.com/Shreyas-Dasari/LookAtMyQuant-Gui"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
   depends_on formula: "uv"
 
   app "LookAtMyQuant Launcher.app"
+
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:         ["-drs", "com.apple.quarantine", "{{appdir}}/LookAtMyQuant Launcher.app"],
+        must_succeed: false
+    run "/usr/bin/codesign",
+        args:         ["--force", "--deep", "-s", "-", "{{appdir}}/LookAtMyQuant Launcher.app"],
+        must_succeed: false
+  end
 
   zap trash: [
     "~/Library/Application Support/com.shreyas.lookatmyquant-launcher",
