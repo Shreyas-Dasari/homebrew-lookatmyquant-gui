@@ -1,6 +1,6 @@
 cask "lookatmyquant-gui" do
   version "0.1.0"
-  sha256 "sha256:08f7df67cd842f4997bc600abd21a1eb61a124a4e0c0303101ef222340a476d4"
+  sha256 "08f7df67cd842f4997bc600abd21a1eb61a124a4e0c0303101ef222340a476d4"
 
   url "https://github.com/Shreyas-Dasari/LookAtMyQuant-Gui/releases/download/v#{version}/LookAtMyQuant.Launcher_#{version}_aarch64.dmg"
   name "LookAtMyQuant Launcher"
