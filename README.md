@@ -1,6 +1,6 @@
 # homebrew-lookatmyquant-gui
 
-Official Homebrew tap for [LookAtMyQuant-Gui](https://github.com/Shreyas-Dasari/LookAtMyQuant-Gui), a macOS desktop launcher for LookAtMyQuant models. Install it on Apple Silicon Macs with:
+Homebrew tap for [LookAtMyQuant-Gui](https://github.com/Shreyas-Dasari/LookAtMyQuant-Gui), a Mac desktop launcher for running LookAtMyQuant models locally. Pass `--no-quarantine` so macOS Gatekeeper does not block the unsigned app bundle:
 
 ```bash
 brew tap Shreyas-Dasari/lookatmyquant-gui
